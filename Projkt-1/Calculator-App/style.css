@@ -1,0 +1,144 @@
+body {
+    margin: 0;
+    background-color: #a2bbcf;
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    width: 90vw; 
+    min-width: 140px;
+    max-width: 340px;
+    height: auto;
+    /* min-height: 400px; */
+    aspect-ratio: 0.85 / 1;
+    padding: 10px;
+    background-color: #205b7a;
+    border-radius: 20px;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3), -4px -4px 10px rgba(0, 0, 0, 0.3);
+    
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    grid-template-areas:
+        "result result result result"
+        "add subtract multiply divide"
+        "seven eight nine clear"
+        "four five six clear"
+        "one two three equals"
+        "zero zero decimal equals";
+    grid-gap: 5px;
+}
+
+.btn {
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    color: white;
+    border: none;
+    background-color:  #142f44;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+    font-family: "Orbitron", sans-serif;
+    font-size: clamp(16px, 3vw, 20px);
+    font-weight: 600;
+    transition: background-color 0.1s ease-in;
+    user-select: none;
+    padding: 0;
+}
+
+.btn:active {
+    transform: scale(0.95);
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+.btn:hover{
+    background-color: #1d3849;
+}
+
+.result {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    grid-area: result;
+    background-color: lightblue;
+    border-radius: 10px 10px 0 0;
+    margin-bottom: 4px;
+    font-family: "Orbitron", sans-serif;
+    font-weight: 600;
+    padding: 12px;
+    min-height: 35.2px;
+
+}
+
+.result:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+.result span {
+    display: inline-block;
+    width: max-content;
+    max-height: 100%;
+    overflow-x: hidden;
+    white-space: nowrap;
+    font-size: clamp(20px, 4vw, 28px);
+}
+
+.zero {
+    grid-area: zero;
+    border-radius: 0 0 0 10px;
+}
+.one {
+    grid-area: one;
+}
+.two {
+    grid-area: two;
+}
+.three {
+    grid-area: three;
+}
+.four {
+    grid-area: four;
+}
+.five {
+    grid-area: five;
+}
+.six {
+    grid-area: six;
+}
+.seven {
+    grid-area: seven;
+}
+.eight {
+    grid-area: eight;
+}
+.nine {
+    grid-area: nine;
+}
+.add {
+    grid-area: add;
+}
+.subtract {
+    grid-area: subtract;
+}
+.multiply {
+    grid-area: multiply;
+}
+.divide {
+    grid-area: divide;
+}
+.clear {
+    grid-area: clear;
+}
+.equals {
+    background-color: #a2bbcf;
+    grid-area: equals;
+    border-radius: 0 0 10px 0;
+}
+
+.equals:hover {
+    background-color: #8ca6bb;
+}
