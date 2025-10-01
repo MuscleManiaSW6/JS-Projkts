@@ -1,0 +1,300 @@
+body {
+    background-color: #CED4DA;
+    margin: 0;
+    font-family: "Roboto", sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+input, select, button {
+    font-family: inherit;
+}
+
+
+legend {
+    display: none;
+}
+
+.field {
+    border: none;
+}
+
+h1, h2 {
+    color: #212529;
+}
+
+
+/* <--- Student Information Form Container ---> */
+.form-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 600px;
+    background-color: #CED4DA;
+    padding: 25px;
+    margin-bottom: 50px;
+    border-radius: 15px;
+    box-shadow: 4px 4px 15px #a9b0b6, -4px -4px 15px #e9edf0; 
+}
+
+/* <--- Student-name container ---> */
+.name-field {
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+    background-color: #CED4DA;
+    border: 1px solid #ccc;
+    border-radius: 12px;
+    padding: 10px 14px;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+    box-shadow: inset 2px 2px 8px #a9b0b6, inset -2px -2px 8px #e9edf0;
+
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 0.5px;
+
+    transition: transform 0.2s ease-in-out;
+
+
+}
+
+.name-field label {
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.input-name {
+    border: none;
+    background-color: #CED4DA;
+    padding: 5px 8px;
+    width: 80%;
+    font-size: 18px;
+    font-weight: 400;
+    letter-spacing: 0.5px;
+}
+
+
+.input-name::placeholder {
+    color: #adb5bd;
+    font-style: italic;
+}
+
+.input-name:focus {
+    outline: none;
+}
+
+
+.name-field:focus-within {
+    transform: translateY(-5px);
+    box-shadow: inset 3px 3px 7px #a9b0b6, inset -3px -3px 7px #e9edf0;
+}
+
+
+.name-field:hover {
+    box-shadow: inset 3px 3px 7px #a9b0b6, inset -3px -3px 7px #e9edf0;
+}
+
+
+
+/* <--- Subject and Mark Containers ---> */
+.sub-field {
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+    background-color: #CED4DA;
+    border: 1px solid #ccc;
+    border-radius: 12px;
+    padding: 10px 14px;
+    margin: 10px 0;
+    box-sizing: border-box;
+    box-shadow: 2px 2px 8px #a9b0b6, -2px -2px 8px #e9edf0;
+
+    letter-spacing: 0.5px;
+
+    transition: transform 0.2s ease-in-out;
+}
+
+.sub-field label {
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.sub-field:focus-within {
+    transform: translateY(-5px);
+    
+}
+
+
+.sub-field:hover {
+    box-shadow:  3px 3px 8px #a9b0b6, -3px -3px 8px #e9edf0;
+    
+}
+
+
+/* <--- Subjects ---> */
+.select-subject {
+    background-color: #CED4DA;
+    border: none;
+    border-radius: 12px;
+    box-shadow: inset 2px 2px 6px #a9b0b6, inset -2px -2px 6px #e9edf0;
+    
+    padding: 10px 5px;
+
+    letter-spacing: 0.5px;
+    font-size: 15px;
+
+}
+
+
+.select-subject:focus {
+    outline: none;
+    border: none;
+    box-shadow: inset 4px 4px 12px #a9b0b6, inset -4px -4px 12px #e9edf0;
+    border: 1px solid #ccc;
+}
+
+.select-subject:hover {
+    border: none;
+}
+
+.select-subject:invalid {
+    color: #adb5bd;
+    font-style: italic;
+}
+
+
+option {
+    background: #CED4DA;
+    color: #333;
+    font-size: 14px;
+}
+
+
+
+/* <--- Marks ---> */
+.input-marks {
+    width: 50px;
+    border: none;
+    padding: 10px 5px;
+    border-radius: 12px;
+    background-color: #CED4DA;
+    box-shadow: inset 2px 2px 6px #a9b0b6, inset -2px -2px 6px #e9edf0;
+    font-size: 15px;
+}
+
+.input-marks::placeholder {
+    text-align: center;
+    color: grey;
+}
+
+.input-marks:focus {
+    outline: none;
+    box-shadow: inset 4px 4px 12px #a9b0b6, inset -4px -4px 12px #e9edf0;
+
+}
+
+
+
+/* <--- Submit Button ---> */
+.submit-btn {
+    background-color: #CED4DA;
+
+    border: none;
+    border-radius: 12px;
+    box-shadow:  2px 2px 6px #a9b0b6, -2px -2px 6px #e9edf0;
+
+    margin: 20px auto;
+    padding: 15px 30px;
+
+    font-size: 15px;
+    font-weight: 500;
+
+    transition: transform 0.2s ease;
+
+}
+
+.submit-btn:hover {
+    cursor: pointer;
+    box-shadow:  4px 4px 12px #a9b0b6,  -4px -4px 12px #e9edf0;
+}
+
+.submit-btn:active {
+    transform: scale(0.95);
+    box-shadow:  2px 2px 6px #a9b0b6, -2px -2px 6px #e9edf0;
+}
+
+
+
+
+/* <--- Student Data Table --->*/
+.table-container {
+    border-collapse: collapse;
+    width: 90%;
+    margin-bottom: 50px
+}
+
+thead .heading {
+    background-color: #212529;
+    color: #D9D9D9;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 12px;
+    text-align: left;
+}
+
+.cell {
+    background-color: #DEE2E6;
+    color: #212529;
+    padding: 12px;
+    text-align: left;
+    transition: background-color 0.2s ease;
+}
+
+.cell:hover {
+    background-color: #CED4DA;
+}
+
+.name {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.delete {
+    text-align: center;
+    user-select: none;
+}
+
+
+/* <--- Delete Button ---> */
+.delete-btn {
+    background-color: #CED4DA;
+
+    border: none;
+    border-radius: 12px;
+    box-shadow:  2px 2px 6px #a9b0b6, -2px -2px 6px #e9edf0;
+    padding: 10px 15px;
+    color: red;
+    font-size: 18px;
+    font-weight: 500;
+
+    transition: transform 0.2s ease;
+}
+
+.delete-btn:hover {
+    cursor: pointer;
+    box-shadow:  4px 4px 12px #a9b0b6,  -4px -4px 12px #e9edf0;
+}
+
+.delete-btn:active {
+    transform: scale(0.95);
+    box-shadow:  2px 2px 6px #a9b0b6, -2px -2px 6px #e9edf0;
+}
+

@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Student Grades Dashboard</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <h1>Student Grades Dashboard</h1>
+    <h2>Student Information</h2>
+    <form id="form" class="form-container">
+
+        <!-- Student info -->
+
+        <fieldset class="name-field field">
+            <legend>Student Information</legend>
+            <label for="name">Name:</label>
+            <input type="text" name="name" id="name" class="input-name" placeholder="Enter student's name" required />
+        </fieldset>
+
+
+        <!-- subject 1 -->
+
+        <fieldset class="sub-field field">
+            <legend>Subject 1</legend>
+            <label for="subject1">Subject:</label>
+            <select name="subject1" id="subject1" class="select-subject" required>
+                <option value="" disabled selected>
+                    -- Select a subject --
+                </option>
+                <option value="Math">Math</option>
+                <option value="English">English</option>
+                <option value="Science">Science</option>
+                <option value="Computer">Computer</option>
+                <option value="Hindi">Hindi</option>
+                <option value="Physical Education">Physical Education</option>
+                <option value="Social Studies">Social Studies</option>
+            </select>
+            <label for="marks1">Marks:</label>
+            <input type="number" name="marks1" id="marks1" class="input-marks" placeholder="-" required min="0" max="100" />
+        </fieldset>
+
+
+        <!-- subject 2 -->
+
+        <fieldset class="sub-field field">
+            <legend>Subject 2</legend>
+            <label for="subject2">Subject:</label>
+            <select name="subject2" id="subject2" class="select-subject" required>
+                <option value="" disabled selected>
+                    -- Select a subject --
+                </option>
+                <option value="Math">Math</option>
+                <option value="English">English</option>
+                <option value="Science">Science</option>
+                <option value="Computer">Computer</option>
+                <option value="Hindi">Hindi</option>
+                <option value="Physical Education">Physical Education</option>
+                <option value="Social Studies">Social Studies</option>
+            </select>
+            <label for="marks2">Marks:</label>
+            <input type="number" name="marks2" id="marks2" class="input-marks" placeholder="-" required min="0" max="100" />
+        </fieldset>
+
+
+        <!-- subject 3 -->
+
+        <fieldset class="sub-field field">
+            <legend>Subject 3</legend>
+            <label for="subject3">Subject:</label>
+            <select name="subject3" id="subject3" class="select-subject" required>
+                <option value="" disabled selected>
+                    -- Select a subject --
+                </option>
+                <option value="Math">Math</option>
+                <option value="English">English</option>
+                <option value="Science">Science</option>
+                <option value="Computer">Computer</option>
+                <option value="Hindi">Hindi</option>
+                <option value="Physical Education">Physical Education</option>
+                <option value="Social Studies">Social Studies</option>
+            </select>
+            <label for="marks3">Marks:</label>
+            <input type="number" name="marks3" id="marks3" class="input-marks" placeholder="-" required min="0" max="100" />
+        </fieldset>
+
+
+        <!-- subject 4 -->
+
+        <fieldset class="sub-field field">
+            <legend>Subject 4</legend>
+            <label for="subject4">Subject:</label>
+            <select name="subject4" id="subject4" class="select-subject" required>
+                <option value="" disabled selected>
+                    -- Select a subject --
+                </option>
+                <option value="Math">Math</option>
+                <option value="English">English</option>
+                <option value="Science">Science</option>
+                <option value="Computer">Computer</option>
+                <option value="Hindi">Hindi</option>
+                <option value="Physical Education">Physical Education</option>
+                <option value="Social Studies">Social Studies</option>
+            </select>
+            <label for="marks4">Marks:</label>
+            <input type="number" name="marks4" id="marks4" class="input-marks" placeholder="-" required min="0" max="100" />
+        </fieldset>
+
+
+        <!-- subject 5 -->
+
+        <fieldset class="sub-field field">
+            <legend>Subject 5</legend>
+            <label for="subject5">Subject:</label>
+            <select name="subject5" id="subject5" class="select-subject" required>
+                <option value = "" disabled selected>
+                    -- Select a subject --
+                </option>
+                <option value="Math">Math</option>
+                <option value="English">English</option>
+                <option value="Science">Science</option>
+                <option value="Computer">Computer</option>
+                <option value="Hindi">Hindi</option>
+                <option value="Physical Education">Physical Education</option>
+                <option value="Social Studies">Social Studies</option>
+            </select>
+            <label for="marks5">Marks:</label>
+            <input type="number" name="marks5" id="marks5" class="input-marks" placeholder="-" required min="0" max="100" />
+        </fieldset>
+
+
+        <!-- Submit -->
+
+        <button class="submit-btn" type="submit" id="submit-btn">Submit</button>
+    </form>
+
+
+
+    <!-- dashboard table -->
+     
+    <h2>Student Data</h2>
+
+    <table id="dashboard"  class="table-container" border="1">
+        <thead>
+            <tr>
+                <th class="heading">Name</th>
+                <th class="heading">Subject</th>
+                <th class="heading">Marks</th>
+                <th class="heading">Grade</th>
+                <th class="heading">Delete</th>
+            </tr>
+        </thead>
+
+        <tbody>
+        
+        </tbody>
+
+    </table>
+    
+    
+    <script src="script.js"></script>
+</body>
+
+</html>
