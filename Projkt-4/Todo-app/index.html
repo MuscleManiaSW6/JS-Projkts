@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Todo-app</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>TODOit</h1>
+    <form id="form" class="form-container">
+      <fieldset class="task-field">
+        <legend>Enter your task:</legend>
+        <input
+          type="text"
+          name="task"
+          id="task"
+          class="task"
+          placeholder="...needs to be done"
+          required
+        />
+        
+        <button class="add" id="add">+</button>
+      </fieldset>
+    </form>
+
+    <ul class="ulist" id="ulist"></ul>
+
+    <script src="script.js"></script>
+  </body>
+</html>
